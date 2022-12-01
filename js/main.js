@@ -6,7 +6,7 @@ class Player {
         this.height = 3;
         this.positionX = 50 - (this.width / 2);
         this.positionY = 0;
-        this.movementAmount = 5;
+        this.movementAmount = 3;
 
         this.domElement = null;
         this.createDomElement();
@@ -27,7 +27,7 @@ class Player {
     }
 
     moveLeft () {
-        if (this.positionX < 5) {
+        if (this.positionX < 3) {
             // stop moving
         } else {
             this.positionX = this.positionX - this.movementAmount;
@@ -36,13 +36,13 @@ class Player {
         console.log(this.positionX);
     }
     moveRight () {
-        if (this.positionX > 85) {
+        if (this.positionX > 88) {
            // stop moving
         } else {
             this.positionX = this.positionX + this.movementAmount;
             this.domElement.style.left = this.positionX + "vw";
         }
-        //console.log(this.positionX);
+        console.log(this.positionX);
     }
 }
 
