@@ -20,6 +20,6 @@ body {
 
 .obstacle {
     position: absolute;
-    background-color: #ff0000;
-    border: 1px solid #000;
+    background-color: #000;
+    border: 3px solid #b3ff00;
 }
